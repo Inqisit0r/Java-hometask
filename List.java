@@ -6,11 +6,9 @@ public class List
 	class Item {
 		private int value;
 		private Item next;
-//		private Item before;
 		public Item(int value) {
 			this.value = value;
 			this.next = null;
-//			this.before = null;
 
 		}
 
@@ -22,15 +20,6 @@ public class List
 				return false;
 			}
 		}
-
-//		public boolean hasBefore() {
-//			if (this.before != null) {
-//				return true;
-//			}
-//			else {
-//				return false;
-//			}
-//		}
 
 		public String toString() {
 			return Long.toString(this.value);
@@ -47,14 +36,6 @@ public class List
 		public void setNext(Item next) {
 			this.next = next;
 		}
-//
-//		public Item getBefore() {
-//			return before;
-//		}
-//
-//		public void setBefore(Item before) {
-//			this.before = before;
-//		}
 	}
 	private Item begin;
 	private long counter;
