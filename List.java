@@ -118,4 +118,30 @@ public class List
 		else
 			return null;
 	}
+
+	public void sort () {
+		long count = this.counter;
+		int i;
+		Item a;
+		Item b;
+		while (count > 0) {
+			i = 0;
+			a = indexAt(i);
+			b = indexAt(i + 1);
+			while (i + 1 < count) {
+				if (a.getValue() > b.getValue()) {
+					swap(i, i + 1);
+					i += 1;
+					a = indexAt(i);
+					b = indexAt(i + 1);
+				}
+				else if(a.getValue() <=  b.getValue()) {
+					++i;
+					a = a.getNext();
+					b = b.getNext();
+				}
+			}
+			--count;
+		}
+	}
 }
