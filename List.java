@@ -83,13 +83,13 @@ public class List
 		return result;
 	}
 
-	public void swap (int firstPoth, int secondPoth) {
-		Item preFirst = indexAt(firstPoth - 1);
-		Item first = indexAt(firstPoth);
-		Item aftFirst = indexAt(firstPoth + 1);
-		Item preSecond = indexAt(secondPoth - 1);
-		Item second = indexAt(secondPoth);
-		Item aftSecond = indexAt(secondPoth + 1);
+	public void swap (int firstPos, int secondPos) {
+		Item preFirst = indexAt(firstPos - 1);
+		Item first = indexAt(firstPos);
+		Item aftFirst = indexAt(firstPos + 1);
+		Item preSecond = indexAt(secondPos - 1);
+		Item second = indexAt(secondPos);
+		Item aftSecond = indexAt(secondPos + 1);
 
 		if (preFirst != null) {
 			preFirst.setNext(second);
